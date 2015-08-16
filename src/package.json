@@ -1,0 +1,34 @@
+{
+  "name": "HTML5_PLAYER",
+  "version": "0.0.1",
+  "author": "yokota kenji",
+  "homepage": "http://yokotakenji.me",
+  "description": "HTML5 player",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yokotak0527/html5_player.git"
+  },
+  "engines": {
+    "node": ">=0.10.26",
+    "npm": ">=2.5.0"
+  },
+  "dependencies": {
+    "coffee-script": "^1.9.3",
+    "gulp": "^3.9.0",
+    "gulp-cached": "^1.1.0",
+    "gulp-changed": "^1.2.1",
+    "gulp-coffee": "^2.3.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-pleeease": "^1.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-util": "^3.0.6",
+    "gulp-watch": "^4.2.4"
+  },
+  "devDependencies": {
+    "gulp-uglify": "^1.2.0"
+  }
+}

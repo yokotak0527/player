@@ -1,0 +1,16 @@
+{
+  "name": "HTML5_PLAYER",
+  "version": "0.0.1",
+  "authors": [
+    "Yokota Kenji <mail@yokotakenji.me>"
+  ],
+  "description": "requisite libraries",
+  "moduleType": [
+    "amd",
+    "node"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "jQuery": "~2.1.4"
+  }
+}

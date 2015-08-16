@@ -1,0 +1,311 @@
+@charset "UTF-8";
+/* ===============================================================
+HTML5 DOCTOR RESET CSS
+===============================================================　*/
+/* html5doctor.com Reset Stylesheet v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #212121;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #444;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/* ===============================================================
+YUI FONT CSS
+===============================================================　*/
+/*
+YUI 3.4.1 (build 4118)
+Copyright 2011 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+body {
+  font: 13px/1.231 arial,helvetica,clean,sans-serif;
+  *font-size: small;
+  *font: x-small;
+}
+
+select, input, button, textarea {
+  font: 99% arial,helvetica,clean,sans-serif;
+}
+
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+pre, code, kbd, samp, tt {
+  font-family: monospace;
+  *font-size: 108%;
+  line-height: 100%;
+}
+
+/* ===============================================================
+yokota
+===============================================================　*/
+body {
+  font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, th {
+  font-weight: normal;
+}
+
+img {
+  vertical-align: top;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+.cntroller_set, .cntroller_set .controller, .cntroller_set .controller .seek .controllers_btn {
+  *zoom: 1;
+}
+.cntroller_set:after, .cntroller_set .controller:after, .cntroller_set .controller .seek .controllers_btn:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@font-face {
+  font-family: "fontello";
+  src: url("data:application/octet-stream;base64,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") format("woff"), url("data:application/octet-stream;base64,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sEsssgABQSstsEwssgEAQSstsE0ssgEBQSstsE4ssgAAQistsE8ssgABQistsFAssgEAQistsFEssgEBQistsFIssgAAPistsFMssgABPistsFQssgEAPistsFUssgEBPistsFYssgAAQCstsFcssgABQCstsFgssgEAQCstsFkssgEBQCstsFossgAAQystsFsssgABQystsFwssgEAQystsF0ssgEBQystsF4ssgAAPystsF8ssgABPystsGAssgEAPystsGEssgEBPystsGIssDcrLrErARQrLbBjLLA3K7A7Ky2wZCywNyuwPCstsGUssAAWsDcrsD0rLbBmLLA4Ky6xKwEUKy2wZyywOCuwOystsGgssDgrsDwrLbBpLLA4K7A9Ky2waiywOSsusSsBFCstsGsssDkrsDsrLbBsLLA5K7A8Ky2wbSywOSuwPSstsG4ssDorLrErARQrLbBvLLA6K7A7Ky2wcCywOiuwPCstsHEssDorsD0rLbByLLMJBAIDRVghGyMhWUIrsAhlsAMkUHiwARUwLQBLuADIUlixAQGOWbABuQgACABjcLEABUKxAAAqsQAFQrEACCqxAAVCsQAIKrEABUK5AAAACSqxAAVCuQAAAAkqsQMARLEkAYhRWLBAiFixA2REsSYBiFFYugiAAAEEQIhjVFixAwBEWVlZWbEADCq4Af+FsASNsQIARAA=") format("truetype");
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/* */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: 0.2em;
+}
+
+.icon-play:before {
+  content: "";
+}
+
+.icon-pause:before {
+  content: "";
+}
+
+.icon-stop:before {
+  content: "";
+}
+
+.icon-loop-alt:before {
+  content: "";
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.cntroller_set .controller .seek h1, .cntroller_set .controller .speed h1, .cntroller_set .volume h1 {
+  font-size: 11px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.cntroller_set .controller .seek h1 span, .cntroller_set .controller .speed h1 span, .cntroller_set .volume h1 span {
+  font-weight: normal;
+}
+.cntroller_set .controller .seek h1 span.sep, .cntroller_set .controller .speed h1 span.sep, .cntroller_set .volume h1 span.sep {
+  display: inline-block;
+  padding: 0 0.5em;
+  color: #999;
+}
+.cntroller_set .controller .seek h1 i, .cntroller_set .controller .speed h1 i, .cntroller_set .volume h1 i {
+  font-style: normal;
+}
+
+.video_wrap {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  box-sizing: border-box;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.video {
+  width: 100%;
+  background: #000;
+  display: block;
+  position: absolute;
+}
+
+.cntroller_set {
+  height: 100px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 20px 0 20px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  background: #FFF;
+}
+.cntroller_set .file_upload {
+  float: left;
+  width: 15%;
+  overflow: hidden;
+}
+.cntroller_set .controller {
+  float: left;
+  width: 85%;
+}
+.cntroller_set .controller .seek {
+  float: left;
+  width: 75%;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+.cntroller_set .controller .seek input {
+  width: 100%;
+  margin: 0;
+}
+.cntroller_set .controller .seek .controllers_btn {
+  padding-top: 5px;
+}
+.cntroller_set .controller .seek .controllers_btn li {
+  float: left;
+}
+.cntroller_set .controller .seek .controllers_btn li a {
+  color: #999;
+  font-size: 18px;
+}
+.cntroller_set .controller .seek .controllers_btn li a.active {
+  color: #333;
+}
+.cntroller_set .controller .seek .controllers_btn li.pose {
+  padding-right: 3px;
+}
+.cntroller_set .controller .seek .controllers_btn li.stop {
+  padding-right: 3px;
+}
+.cntroller_set .controller .speed {
+  float: left;
+  width: 25%;
+}
+.cntroller_set .controller .speed input {
+  margin: 0;
+  width: 100%;
+}
+.cntroller_set .volume {
+  float: left;
+  width: 18%;
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+.cntroller_set .volume input {
+  margin: 0;
+  width: 100%;
+}

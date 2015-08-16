@@ -1,0 +1,123 @@
+@import "_def_reset"
+@import "helper_extends"
+@import "helper_mixins"
+@import "compass"
+@import "lib/fontello-embedded"
+
+html
+	width  : 100%
+	height : 100%
+
+body
+	width    : 100%
+	height   : 100%
+	position : relative
+
+
+// =============================================================================
+// mixin style
+// =============================================================================
+%header_style
+	font-size     : 11px
+	font-weight   : bold
+	margin-bottom : 5px
+	span
+		font-weight : normal
+	span.sep
+		display : inline-block
+		padding : 0 0.5em
+		color   : #999
+	i
+		font-style : normal
+
+// =============================================================================
+// 動画
+// =============================================================================
+
+.video_wrap
+	width          : 100%
+	height         : 100%
+	background     : #000
+	box-sizing     : border-box
+	padding-bottom : 100px
+	position       : relative
+
+.video
+	width      : 100%
+	background : #000
+	display    : block
+	position   : absolute
+
+.file_upload
+	//input
+	//	width      : 100%
+	//	height     : 100%
+	//	display    : block
+	//	background : #F00
+	//	overflow   : hidden
+	//	border     : none
+
+// =============================================================================
+// コントローラー
+// =============================================================================
+
+.cntroller_set
+	height     : 100px
+	width      : 100%
+	box-sizing : border-box
+	padding    : 20px 20px 0 20px
+	overflow   : hidden
+	position   : absolute
+	bottom     : 0
+	background : #FFF
+	@extend %clearfix
+	.file_upload
+		float    : left
+		width    : 15%
+		overflow : hidden
+	.controller
+		float : left
+		width : 85%
+		@extend %clearfix
+		.seek
+			float      : left
+			width      : 75%
+			box-sizing : border-box
+			padding    : 0 20px
+			h1
+				@extend %header_style
+			input
+				width  : 100%
+				margin : 0
+			.controllers_btn
+				padding-top : 5px
+				@extend %clearfix
+				li
+					float : left
+					a
+						color     : #999
+						font-size : 18px
+					a.active
+						color : #333
+				li.pose
+					padding-right : 3px
+				li.stop
+					padding-right : 3px
+		.speed
+			float : left
+			width : 25%
+			h1
+				@extend %header_style
+			input
+				margin : 0
+				width  : 100%
+	.volume
+		float        : left
+		width        : 18%
+		box-sizing   : border-box
+		padding-left : 20px
+		h1
+			@extend %header_style
+		input
+			margin : 0
+			width  : 100%
