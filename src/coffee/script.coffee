@@ -336,7 +336,7 @@ class Speed
 	_speedChange = (e)->
 		@val = @$input.val()
 		_setSpeedMeter.call(@)
-		@video.receiveEvent('speedChanged',@val)
+		@video.receiveEvent('speedChanged',[@val])
 		return
 
 	_speedReset = (e)->
